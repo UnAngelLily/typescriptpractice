@@ -1,1 +1,1 @@
-console.log('Hello World');
+console.log('Console takes too long to load');
