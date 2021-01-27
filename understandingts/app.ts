@@ -16,10 +16,14 @@ const person = {
     // array with strings
 };
 
-let favoriteActivities: string [];
+let favoriteActivities: any[];
 favoriteActivities = ['screaming', 'blowing bubbles with your mouth']
 // better syntax
 console.log(person.name);
+
+for (const hobby of person.hobbies) {
+    console.log(hobby);
+}
 // nested objects
 
 // const product = {
