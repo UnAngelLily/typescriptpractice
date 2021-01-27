@@ -9,20 +9,20 @@
 //     age: 0
 // };
 
-const person: {
-    name: string;
-    age: number;
-    hobbies: string[];
-    role: [number, string];
-    // this marks the tuple time
-} = {
-    name: 'Theo',
-    age: 0,
-    hobbies: ['crying', 'farts'],
-    role: [2, 'baby']
-    // truple where the array holds either strings or numbers and a around with two
-    // array with strings
-};
+// const person: {
+//     name: string;
+//     age: number;
+//     hobbies: string[];
+//     role: [number, string];
+//     // this marks the tuple time
+// } = {
+//     name: 'Theo',
+//     age: 0,
+//     hobbies: ['crying', 'farts'],
+//     role: [2, 'baby']
+//     // truple where the array holds either strings or numbers and a around with two
+//     // array with strings
+// };
 
 // person.role.push('admin');
 // push is an exception
@@ -30,13 +30,13 @@ const person: {
 
 // person.role = [0, 'admin', 'user'];
 
-let favoriteActivities: any[];
-favoriteActivities = ['screaming', 'blowing bubbles with your mouth']
-// better syntax
-console.log(person.name);
+// let favoriteActivities: any[];
+// favoriteActivities = ['screaming', 'blowing bubbles with your mouth']
+// // better syntax
+// console.log(person.name);
 
-for (const hobby of person.hobbies) {
-    console.log(hobby.toUpperCase());
+// for (const hobby of person.hobbies) {
+//     console.log(hobby.toUpperCase());
     // allows to add string attributes because hobby and activites are set up to be strings via the array with strings
 }
 // nested objects
@@ -60,3 +60,16 @@ for (const hobby of person.hobbies) {
 //         descript: string;
 //     }
 // }
+
+const person: {
+    name: string;
+    age: number;
+    hobbies: string[];
+    rolde: [number, string]
+} = {
+    name: 'Maximilian',
+    age: 30,
+    hobbies: ['Sports', 'Cooking'],
+    role: [2, 'author']
+
+;}
