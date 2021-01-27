@@ -22,7 +22,7 @@ favoriteActivities = ['screaming', 'blowing bubbles with your mouth']
 console.log(person.name);
 
 for (const hobby of person.hobbies) {
-    console.log(hobby);
+    console.log(hobby.toUpperCase());
 }
 // nested objects
 
