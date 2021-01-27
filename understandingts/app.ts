@@ -11,29 +11,33 @@
 
 const person = {
     name: 'Theo',
-    age: 0
-    hobbies: ['crying', 'making fart noises with your mouth']
+    age: 0,
+    hobbies: ['crying', 'farts']
+    // array with strings
 };
+
+let favoriteActivities: string [];
+favoriteActivities = ['screaming', 'blowing bubbles with your mouth']
 // better syntax
 console.log(person.name);
 // nested objects
 
-const product = {
-    id: 'abc1',
-    price: 12.99,
-    tags: ['great-offer', 'hot-and-new'],
-    details: {
-        title: 'Red Carpet',
-        description: 'A great carpet - almost brand-new!'
-    }
-}
+// const product = {
+//     id: 'abc1',
+//     price: 12.99,
+//     tags: ['great-offer', 'hot-and-new'],
+//     details: {
+//         title: 'Red Carpet',
+//         description: 'A great carpet - almost brand-new!'
+//     }
+// }
 
-// type of the object
-{
-    id: string;
-    tags: string [],
-    details: {
-        title: string;
-        descript: string;
-    }
-}
+// // type of the object
+// {
+//     id: string;
+//     tags: string [],
+//     details: {
+//         title: string;
+//         descript: string;
+//     }
+// }
