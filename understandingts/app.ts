@@ -23,6 +23,7 @@ console.log(person.name);
 
 for (const hobby of person.hobbies) {
     console.log(hobby.toUpperCase());
+    // allows to add string attributes because hobby and activites are set up to be strings via the array with strings
 }
 // nested objects
 
