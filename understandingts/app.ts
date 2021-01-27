@@ -9,12 +9,26 @@
 //     age: 0
 // };
 
-const person = {
+const person: {
+    name: string;
+    age: number;
+    hobbies: string[];
+    role: [number, string];
+    // this marks the tuple time
+} = {
     name: 'Theo',
     age: 0,
-    hobbies: ['crying', 'farts']
+    hobbies: ['crying', 'farts'],
+    role: [2, 'baby']
+    // truple where the array holds either strings or numbers and a around with two
     // array with strings
 };
+
+// person.role.push('admin');
+// push is an exception
+// person.role[1] = 10;
+
+// person.role = [0, 'admin', 'user'];
 
 let favoriteActivities: any[];
 favoriteActivities = ['screaming', 'blowing bubbles with your mouth']
