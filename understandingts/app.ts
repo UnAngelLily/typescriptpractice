@@ -79,6 +79,6 @@ for (const hobby of person.hobbies) {
     console.log(hobby.toUpperCase());
 }
 
-if (person.role === 'READ-ONLY-USER') {
-    console.log('is read only');
+if (person.role === ADMIN) {
+    console.log('is admin');
 }
