@@ -12,6 +12,7 @@
 const person = {
     name: 'Theo',
     age: 0
+    hobbies: ['crying', 'making fart noises with your mouth']
 };
 // better syntax
 console.log(person.name);
