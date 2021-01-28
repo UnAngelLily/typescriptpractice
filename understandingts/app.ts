@@ -69,7 +69,9 @@
 
 enum Role {ADMIN, READ_ONLY, AUTHOR};
 // enum is a custom type so convention is to start with captial, often you'll see enums with all-uppercase values but that's not a must-do. You can go with any value names.
-
+// call assign the role with a different numbering than 0,1,2 etc... 
+    // enum Role { ADMIN = 5, READ_ONLY, AUTHOR }' this becomes 5, 6, 7 instead or you can assign all of them or text or even mix it with a string
+    // enum Role { ADMIN = 'ADMIN', READ_ONLY = 100, AUTHOR = 'AUTHOR };
 const person = {
     name: 'Maximilian',
     age: 30,
