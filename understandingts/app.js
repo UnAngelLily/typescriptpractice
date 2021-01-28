@@ -94,3 +94,4 @@ for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
 if (person.role === 'BABY') {
     console.log('is the baby');
 }
+;

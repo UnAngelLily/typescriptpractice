@@ -99,7 +99,7 @@ const BABY = 0;
 const READ_ONLY = 1;
 const AUTHOR = 2;
 
-const person: {
+const person = {
     name: 'Theo',
     age: 0,
     hobbies: ['farting', 'crying'],
@@ -118,4 +118,4 @@ for (const hobby of person.hobbies) {
 if (person.role === 'BABY'){
     console.log('is the baby');
     
-}
+};
