@@ -79,10 +79,25 @@
 //     console.log('is author');
 // }
 // ==================== enum ===============================
-var BABY = 0;
-var READ_ONLY = 1;
-var AUTHOR = 2;
-var person;
+// const BABY = 0;
+// const READ_ONLY = 1;
+// const AUTHOR = 2;
+// enum can save work
+var Role;
+(function (Role) {
+    Role[Role["BABY"] = 0] = "BABY";
+    Role[Role["READ_ONLY"] = 1] = "READ_ONLY";
+    Role[Role["AUTHOR"] = 2] = "AUTHOR";
+})(Role || (Role = {}));
+;
+var person = {
+    name: 'Theo',
+    age: 0,
+    hobbies: ['farting', 'crying'],
+    role: Role.BABY
+    // role: 'BABY'
+    // this infered to be a number and an enum can save the work
+};
 var favoriteActivities;
 favoriteActivities = ['Playing'];
 console.log(person.name);
@@ -91,7 +106,8 @@ for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
     console.log(hobby.toUpperCase());
 }
 ;
-if (person.role === 'BABY') {
+// if (person.role === 'BABY'){
+if (person.role === Role.BABY) {
     console.log('is the baby');
 }
 ;

@@ -95,15 +95,20 @@
 
 // ==================== enum ===============================
 
-const BABY = 0;
-const READ_ONLY = 1;
-const AUTHOR = 2;
+// const BABY = 0;
+// const READ_ONLY = 1;
+// const AUTHOR = 2;
+// enum can save work
+
+enum Role { BABY, READ_ONLY, AUTHOR };
 
 const person = {
     name: 'Theo',
     age: 0,
     hobbies: ['farting', 'crying'],
-    role: 'BABY'
+    role: Role.BABY
+    // role: 'BABY'
+    // this infered to be a number and an enum can save the work
 };
 
 let favoriteActivities: string [];
@@ -115,7 +120,8 @@ for (const hobby of person.hobbies) {
     console.log(hobby.toUpperCase());
 };
     
-if (person.role === 'BABY'){
+// if (person.role === 'BABY'){
+ if (person.role === Role.BABY) {
     console.log('is the baby');
     
 };
