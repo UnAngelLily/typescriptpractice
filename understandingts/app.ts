@@ -100,7 +100,8 @@
 // const AUTHOR = 2;
 // enum can save work
 
-enum Role { BABY, READ_ONLY, AUTHOR };
+enum Role { BABY = 5, READ_ONLY, AUTHOR };
+// assigns the value and increments the starting value
 
 const person = {
     name: 'Theo',
