@@ -95,6 +95,10 @@
 
 // ==================== enum ===============================
 
+const BABY = 0;
+const READ_ONLY = 1;
+const AUTHOR = 2;
+
 const person: {
     name: 'Theo',
     age: 0,
@@ -111,4 +115,7 @@ for (const hobby of person.hobbies) {
     console.log(hobby.toUpperCase());
 };
     
-if (person.role === 'BABY')
+if (person.role === 'BABY'){
+    console.log('is the baby');
+    
+}

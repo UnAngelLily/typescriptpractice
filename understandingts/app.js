@@ -57,27 +57,40 @@
 // const ADMIN = 0;
 // const READ_ONLY = 1;
 // const AUTHOR = 2;
-var Role;
-(function (Role) {
-    Role[Role["ADMIN"] = 0] = "ADMIN";
-    Role[Role["READ_ONLY"] = 1] = "READ_ONLY";
-    Role[Role["AUTHOR"] = 2] = "AUTHOR";
-})(Role || (Role = {}));
-;
-// enum is a custom type so convention is to start with captial, often you'll see enums with all-uppercase values but that's not a must-do. You can go with any value names.
-var person = {
-    name: 'Maximilian',
-    age: 30,
-    hobbies: ['Sports', 'Cooking'],
-    role: Role.ADMIN
-};
+// enum Role {ADMIN, READ_ONLY, AUTHOR};
+// // enum is a custom type so convention is to start with captial, often you'll see enums with all-uppercase values but that's not a must-do. You can go with any value names.
+// // call assign the role with a different numbering than 0,1,2 etc... 
+//     // enum Role { ADMIN = 5, READ_ONLY, AUTHOR }' this becomes 5, 6, 7 instead or you can assign all of them or text or even mix it with a string
+//     // enum Role { ADMIN = 'ADMIN', READ_ONLY = 100, AUTHOR = 'AUTHOR };
+// const person = {
+//     name: 'Maximilian',
+//     age: 30,
+//     hobbies: ['Sports', 'Cooking'],
+//     role: Role.ADMIN
+// };
+// let favoriteActivities: string [];
+// favoriteActivities = ['Sports'];
+// console.log(person.name);
+// for (const hobby of person.hobbies) {
+//     console.log(hobby.toUpperCase());
+// }
+// if (person.role === Role.AUTHOR) {
+//     // this is refering the enum which assigns labels to numbers.
+//     console.log('is author');
+// }
+// ==================== enum ===============================
+var BABY = 0;
+var READ_ONLY = 1;
+var AUTHOR = 2;
+var person;
 var favoriteActivities;
-favoriteActivities = ['Sports'];
+favoriteActivities = ['Playing'];
 console.log(person.name);
 for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
     var hobby = _a[_i];
     console.log(hobby.toUpperCase());
 }
-if (person.role === Role.AUTHOR) {
-    console.log('is author');
+;
+if (person.role === 'BABY') {
+    console.log('is the baby');
 }
