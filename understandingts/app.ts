@@ -96,12 +96,19 @@
 // ==================== enum ===============================
 
 const person: {
-    name: string;
-    age: number;
-    hobbies: string [];
-} = {
     name: 'Theo',
     age: 0,
     hobbies: ['farting', 'crying'],
-    role: [2, 'baby']
+    role: 'BABY'
 };
+
+let favoriteActivities: string [];
+favoriteActivities = ['Playing'];
+
+console.log(person.name);
+
+for (const hobby of person.hobbies) {
+    console.log(hobby.toUpperCase());
+};
+    
+if (person.role === 'BABY')
