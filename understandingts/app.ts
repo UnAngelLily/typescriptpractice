@@ -87,5 +87,6 @@ for (const hobby of person.hobbies) {
 }
 
 if (person.role === Role.AUTHOR) {
+    // this is refering the enum which assigns lables to numbers.
     console.log('is author');
 }
