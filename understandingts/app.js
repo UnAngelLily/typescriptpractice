@@ -53,14 +53,23 @@
 //         descript: string;
 //     }
 // }
-var ADMIN = 0;
-var READ_ONLY = 1;
-var AUTHOR = 2;
+// ============= enum ================
+// const ADMIN = 0;
+// const READ_ONLY = 1;
+// const AUTHOR = 2;
+var Role;
+(function (Role) {
+    Role[Role["ADMIN"] = 0] = "ADMIN";
+    Role[Role["READ_ONLY"] = 1] = "READ_ONLY";
+    Role[Role["AUTHOR"] = 2] = "AUTHOR";
+})(Role || (Role = {}));
+;
+// enum is a custom type so convention is to start with captial, often you'll see enums with all-uppercase values but that's not a must-do. You can go with any value names.
 var person = {
     name: 'Maximilian',
     age: 30,
     hobbies: ['Sports', 'Cooking'],
-    role: ADMIN
+    role: Role.ADMIN
 };
 var favoriteActivities;
 favoriteActivities = ['Sports'];
@@ -69,6 +78,6 @@ for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
     var hobby = _a[_i];
     console.log(hobby.toUpperCase());
 }
-if (person.role === ADMIN) {
-    console.log('is admin');
+if (person.role === Role.AUTHOR) {
+    console.log('is author');
 }

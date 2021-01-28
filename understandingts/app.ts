@@ -74,7 +74,7 @@ const person = {
     name: 'Maximilian',
     age: 30,
     hobbies: ['Sports', 'Cooking'],
-    role: ADMIN
+    role: Role.ADMIN
 };
 
 let favoriteActivities: string [];
@@ -86,6 +86,6 @@ for (const hobby of person.hobbies) {
     console.log(hobby.toUpperCase());
 }
 
-if (person.role === ADMIN) {
-    console.log('is admin');
+if (person.role === Role.AUTHOR) {
+    console.log('is author');
 }
