@@ -38,7 +38,7 @@
 // for (const hobby of person.hobbies) {
 //     console.log(hobby.toUpperCase());
     // allows to add string attributes because hobby and activites are set up to be strings via the array with strings
-}
+// }
 // nested objects
 
 // const product = {
@@ -63,7 +63,7 @@
 const ADMIN = 0;
 const READ_ONLY = 1;
 const AUTHOR = 2;
-const person: {
+const person = {
     name: 'Maximilian',
     age: 30,
     hobbies: ['Sports', 'Cooking'],
@@ -71,7 +71,7 @@ const person: {
 };
 
 let favoriteActivities: string [];
-favoriteActivies = ['Sports'];
+favoriteActivities = ['Sports'];
 
 console.log(person.name);
 

@@ -8,27 +8,32 @@
 //     name: 'Theo',
 //     age: 0
 // };
-var person = {
-    name: 'Theo',
-    age: 0,
-    hobbies: ['crying', 'farts'],
-    role: [2, 'baby']
-    // truple where the array holds either strings or numbers and a around with two
-    // array with strings
-};
+// const person: {
+//     name: string;
+//     age: number;
+//     hobbies: string[];
+//     role: [number, string];
+//     // this marks the tuple time
+// } = {
+//     name: 'Theo',
+//     age: 0,
+//     hobbies: ['crying', 'farts'],
+//     role: [2, 'baby']
+//     // truple where the array holds either strings or numbers and a around with two
+//     // array with strings
+// };
 // person.role.push('admin');
 // push is an exception
 // person.role[1] = 10;
 // person.role = [0, 'admin', 'user'];
-var favoriteActivities;
-favoriteActivities = ['screaming', 'blowing bubbles with your mouth'];
-// better syntax
-console.log(person.name);
-for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
-    var hobby = _a[_i];
-    console.log(hobby.toUpperCase());
-    // allows to add string attributes because hobby and activites are set up to be strings via the array with strings
-}
+// let favoriteActivities: any[];
+// favoriteActivities = ['screaming', 'blowing bubbles with your mouth']
+// // better syntax
+// console.log(person.name);
+// for (const hobby of person.hobbies) {
+//     console.log(hobby.toUpperCase());
+// allows to add string attributes because hobby and activites are set up to be strings via the array with strings
+// }
 // nested objects
 // const product = {
 //     id: 'abc1',
@@ -48,3 +53,22 @@ for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
 //         descript: string;
 //     }
 // }
+var ADMIN = 0;
+var READ_ONLY = 1;
+var AUTHOR = 2;
+var person = {
+    name: 'Maximilian',
+    age: 30,
+    hobbies: ['Sports', 'Cooking'],
+    role: ADMIN
+};
+var favoriteActivities;
+favoriteActivities = ['Sports'];
+console.log(person.name);
+for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
+    var hobby = _a[_i];
+    console.log(hobby.toUpperCase());
+}
+if (person.role === ADMIN) {
+    console.log('is admin');
+}
