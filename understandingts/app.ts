@@ -60,9 +60,16 @@
 //         descript: string;
 //     }
 // }
-const ADMIN = 0;
-const READ_ONLY = 1;
-const AUTHOR = 2;
+
+
+// ============= enum ================
+// const ADMIN = 0;
+// const READ_ONLY = 1;
+// const AUTHOR = 2;
+
+enum Role {ADMIN, READ_ONLY, AUTHOR};
+// enum is a custom type so convention is to start with captial, often you'll see enums with all-uppercase values but that's not a must-do. You can go with any value names.
+
 const person = {
     name: 'Maximilian',
     age: 30,
